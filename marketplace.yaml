@@ -11,7 +11,7 @@ spec:
   - name: docker-node-mongo
     image: local-registry:5002/ui:latest
     ports:
-    - containerPort: 3000
+    - containerPort: 30060
     resources:
       requests: {}
       limits:
@@ -51,7 +51,7 @@ spec:
   ports:
   - name: front
     port: 3000
-    targetPort: 3000
+    targetPort: 30060
     nodePort: 30045
   - name: back
     port: 4000

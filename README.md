@@ -23,7 +23,7 @@ Step1: Run docker-compose.yaml:
 
       docker-compose up -d
       
-Step2: Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Step2: Open [http://localhost:30060](http://localhost:30060) with your browser to see the result.
 
 ### Using dockerfile
 
@@ -41,15 +41,15 @@ Step3: Build the dockerfile for frontend
       cd ..
       docker build --no-cache -t frontend:1.0
 
-Step4: run frontend image at port 3000
+Step4: run frontend image at port 30060
 
-      docker run  -p 3000:3000 --name frontapp --net nextapp frontend:1.0
+      docker run -d -p 30060:3000 --name frontapp --net nextapp frontend:1.0
 
 Step5: run backend image at port 4000
 
-      docker run  -p 4000:4000 --name backapp --net nextapp backend:1.0
+      docker run -d -p 4000:4000 --name backapp --net nextapp backend:1.0
 
-Step6: Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Step6: Open [http://localhost:30060](http://localhost:30060) with your browser to see the result.
       
 ### Using npm command
 
@@ -68,7 +68,7 @@ cd signupbackend
 npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:30060](http://localhost:30060) with your browser to see the result.
 
 ## Home Page
 
