@@ -11,6 +11,6 @@ COPY . /usr/src/app
 
 RUN npm install
 
-EXPOSE 3000
+EXPOSE 30060
 
 CMD npm run dev
