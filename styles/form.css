@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: rgb(179, 179, 179);
+}
+.site-header {
+  border-bottom: 1px solid #ccc;
+  padding: 0.5em 1em;
+  display: flex;
+  justify-content: space-between;
+}
+.site-identity h1 {
+  font-size: 1.5em;
+  margin: 0.6em 0;
+  display: inline-block;
+}
+.site-navigation ul,
+.site-navigation li {
+  margin: 0;
+  padding: 0;
+}
+.site-navigation li {
+  display: inline-block;
+  margin: 1.4em 1em 1em 1em;
+}
+
+.searchbar {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 0.5px solid black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid lightgrey;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+}
+
+button {
+  background-color: #10dd92;
+  color: rgb(129, 2, 2);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin: 5px;
+  font-size: large;
+}
+.sign-up-btn {
+  background-color: #1c8adb;
+  font-size: 24px;
+}
+button:hover {
+  background-color: #16c51c;
+  border: 0.5px solid black;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.container1 {
+  width: 800px;
+  height: 300px;
+  /* box-shadow: 0 0 3px 0 rgb(0, 0, 0, 0.3); */
+  background: #fff;
+  margin: auto;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.container1 h1 {
+  color: #1c8adb;
+  font-size: 40px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+.bg-img {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+  margin-top: 80px;
+}
+
+.container2 {
+  padding: 10px;
+}
+
+.cardsizing {
+  height: -webkit-fill-available;
+  height: 100%;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.row-homepage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* width: 200px; */
+  gap: 100px;
+  margin: 10px;
+}
+
+.profile {
+  display: flex;
+}
+
+.profileImage {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #512da8;
+  font-size: 70px;
+  color: #fff;
+  margin: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileDetails {
+  padding-left: 40px;
+  width: 70%;
+}
+
+#dashboard {
+  height: 50px;
+  margin-top: 20px;
+}
+
+.dashboard {
+  font-size: 20px;
+  margin: 0%;
+  padding: 0%;
+}
+
+hr {
+  border: 5px solid red;
+  border-radius: 5px;
+}
+
+.items {
+  padding: 0px 50px;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+.card {
+  width: 40%;
+}
+
+.card1 {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 0 40px 20px rgb(0, 0, 0, 0.26);
+}
+
+.media {
+  width: 100%;
+  height: 100%;
+}
+
+.itempage {
+  height: 100vh;
+}
+
+#cardaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.cardaction {
+  display: flex;
+  align-items: center;
+  /* width: 100%; */
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+}
+
+.cardaction button {
+  /* display: flex;
+  justify-content: left; */
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+}
+
+.content {
+  overflow: hidden;
+  /* background-color: #EDE5D7; */
+  background-color: #80daeb;
+  /* background-color: #f1f1f1 */
+  padding: 20px 10px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+}
+
+#searchbar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.addform {
+  display: flex;
+  height: 100vh;
+}
+
+#addform {
+  display: flex;
+  height: 100vh;
+  margin: 0 -5px;
+}
+
+.addimage {
+  width: 30%;
+  margin: auto;
+  margin-left: 15%;
+}
+
+.addinfo {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: auto;
+  margin-right: 15%;
+}
+
+.flexitem {
+  background: gray;
+  width: 400px;
+  height: 400px;
+  /* margin: 0 5px; */
+  margin: 0 100px;
+}
+
+#image {
+  width: 500px;
+  height: 500px;
+  border-color: red;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.addimage #image,
+.addimage .text {
+  transition: opacity 0s;
+}
+.addimage .text {
+  opacity: 0;
+}
+
+.addimage:hover #image {
+  opacity: 0;
+  width: 70%;
+}
+.addimage:hover .text {
+  opacity: 1;
+  /* margin: 10%; */
+  margin-bottom: auto;
+
+  /* border: 5px solid pink; */
+}
+
+#name,
+#slug,
+#labels,
+#button {
+  width: 100%;
+  align-self: auto;
+  margin-bottom: 20px;
+}
+
+.submit {
+  width: 30%;
+  margin-left: 35%;
+  background-color: #16c51c;
+}
+
+#available,
+#not-available {
+  width: 2vh;
+  height: 2vh;
+}
+
+.availability {
+  font-size: 15px;
+}
+
+.userProfile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #512da8;
+  font-size: 40px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userProfile:hover {
+  color: rgb(129, 2, 2);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin: 5px;
+  font-size: 20px;
+  background-color: #16c51c;
+  border: 0.5px solid black;
+}
+
+.sticky {
+  background-color: #80daeb;
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  display: block;
+  z-index: 1;
+}
+
+.show {
+  background-color: #80daeb;
+  position: fixed;
+  top: -300px;
+  width: 100%;
+  display: block;
+  z-index: 1;
+}
+
+.profileImage1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #512da8;
+  font-size: 25px;
+  color: #fff;
+  margin: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dashboard1 {
+  height: 50px;
+  margin-top: 10px;
+}
+
+.dashboard1 {
+  font-size: 20px;
+  margin: 0%;
+  padding: 0%;
+}
